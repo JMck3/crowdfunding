@@ -15,7 +15,7 @@ function App() {
           <Route exact path="/">
             <HomePage />
           </Route>
-          <Route path="/project">
+          <Route path="/project/:id">
             <ProjectPage />
           </Route>
         </Switch>

@@ -6,7 +6,13 @@ function HomePage() {
     const [projectList, setProjectList] = useState([]);
 
     useEffect(() => {
-        setProjectList(allProjects);
+        fetch(`${process.env.REACT_APP_API_URL}projects`)
+        .then((results) => {
+            return results.json();
+        })
+        .then((data) => {
+            setProjectList(data);
+        });
     }, []); 
 
     return (
