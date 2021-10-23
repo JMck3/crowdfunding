@@ -4,6 +4,7 @@ import "./App.css";
 import Nav from "./components/Nav/Nav";
 import HomePage from "./Pages/HomePage";
 import ProjectPage from "./Pages/ProjectPage";
+import LoginPage from "./Pages/LoginPage";
 
 function App() {
   return (
@@ -12,14 +13,14 @@ function App() {
         <Nav />
 
         <Switch>
-          <Route exact path="/">
-            <HomePage />
-          </Route>
           <Route path="/project/:id">
             <ProjectPage />
           </Route>
           <Route path="/login">
             <LoginPage />
+          </Route>
+          <Route exact path="/">
+            <HomePage />
           </Route>
         </Switch>
       </div>
