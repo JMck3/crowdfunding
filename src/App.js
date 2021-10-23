@@ -18,6 +18,9 @@ function App() {
           <Route path="/project/:id">
             <ProjectPage />
           </Route>
+          <Route path="/login">
+            <LoginPage />
+          </Route>
         </Switch>
       </div>
     </Router>
