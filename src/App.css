@@ -37,9 +37,90 @@
   }
 } */
 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+body {
+  background-color: rgb(122, 68, 161);
+}
+
 #project-list {
   display: grid;
   grid-template-columns: 30% 30% 30%;
   column-gap: 10px;
   row-gap: 10px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #000;
+}
+
+img {
+  filter: grayscale(100%);
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  font-size: 4rem;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  color: whitesmoke;
+}
+
+h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  margin: 0;
+}
+
+#header-text {
+  flex-basis: 80%;
+  display: flex;
+}
+
+h4 {
+  color: whitesmoke;
+}
+
+nav {
+  flex-basis: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+a {
+  margin: 2px;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+a,
+p {
+  font-family: monospace;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+p {
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+a:hover {
+  color: rgb(229, 149, 55);
+}
+
+.orange {
+  color: rgb(229, 149, 55);
+  display: inline-block;
 }
