@@ -2,10 +2,10 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 import Nav from "./components/Nav/Nav";
-import HomePage from "./Pages/HomePage";
-import ProjectPage from "./Pages/ProjectPage";
-import LoginPage from "./Pages/LoginPage";
-import CreateProjectPage from "./Pages/CreateProjectPage";
+import Home from "./Pages/HomePage";
+import Projects from "./Pages/ProjectPage";
+import Login from "./Pages/LoginPage";
+import CreateProject from "./Pages/CreateProjectPage";
 
 function App() {
   return (
@@ -15,16 +15,16 @@ function App() {
 
         <Switch>
           <Route path="/project/:id">
-            <ProjectPage />
+            <Projects />
           </Route>
           <Route path="/login">
-            <LoginPage />
+            <Login />
           </Route>
           <Route path="/createproject">
-            <CreateProjectPage />
+            <CreateProject />
           </Route>
           <Route exact path="/">
-            <HomePage />
+            <Home />
           </Route>
         </Switch>
       </div>

@@ -37,8 +37,8 @@ const CreateProjectForm = () => {
     if (window.localStorage.getItem("token")) {
       postData().then((response) => {
         console.log("response from our API ----------------", response);
-        //         // window.localStorage.setItem("token", response.token);
-        //         // history.push("/");
+        // window.localStorage.setItem("token", response.token);
+        // history.push("/");
       });
     }
   };
@@ -50,7 +50,7 @@ const CreateProjectForm = () => {
           type="text"
           id="title"
           placeholder="Enter project name"
-          // onChange={handleChange}
+          onChange={handleChange}
         />
       </div>
       <div>
@@ -59,7 +59,7 @@ const CreateProjectForm = () => {
           type="text"
           id="description"
           placeholder="Description"
-          // onChange={handleChange}
+          onChange={handleChange}
         />
       </div>
       <div>
@@ -68,7 +68,7 @@ const CreateProjectForm = () => {
           type="text"
           id="Goal"
           placeholder="Goal"
-          // onChange={handleChange}
+          onChange={handleChange}
         />
       </div>
       <div>
@@ -77,7 +77,7 @@ const CreateProjectForm = () => {
           type="text"
           id="Image"
           placeholder="Image"
-          // onChange={handleChange}
+          onChange={handleChange}
         />
       </div>
       <div>
@@ -86,7 +86,7 @@ const CreateProjectForm = () => {
           type="text"
           id="is_open"
           placeholder="Is Open"
-          // onChange={handleChange}
+          onChange={handleChange}
         />
       </div>
       <button type="submit">Submit New Project</button>
