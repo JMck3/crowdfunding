@@ -130,7 +130,7 @@ const LoginForm = () => {
           onChange={handleChange}
         />
       </div>
-      <div>
+      <div className="loginform">
         <label htmlFor="password">Password:</label>
         <input
           type="password"
