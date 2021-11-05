@@ -119,7 +119,7 @@ const ProjectPage = () => {
               <li key={key}>
                 {pledgeData.amount} from{" "}
                 {users &&
-                  users.find((u) => u.id == pledgeData.supporter).username}
+                  users.find((u) => u.id === pledgeData.supporter).username}
               </li>
             );
           })}
