@@ -114,7 +114,7 @@ const LoginForm = () => {
       postData().then((response) => {
         window.localStorage.setItem("token", response.token);
         window.location = `${window.location.origin}/`;
-        // history.push("/");
+        history.push("/");
       });
     }
   };

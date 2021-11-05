@@ -5,11 +5,25 @@ import "./ProjectCard.css";
 function ProjectCard(props) {
   const { projectData } = props;
   return (
-    <div className="project-card">
-      <Link to={`/project/${projectData.id}`}>
-        <img alt="projectData" src={projectData.image} />
-        <h3>{projectData.title}</h3>
-      </Link>
+    <div className="maincontainer">
+      <div className="thecard">
+        <div className="thefront">
+          <Link to={`/project/${projectData.id}`}>
+            <img alt="projectData" src={projectData.image} />
+          </Link>
+        </div>
+        <div className="maincontainer">
+          <div className="thecard">
+            <div className="theback">
+              onClick{" "}
+              <Link to={`/project/${projectData.id}`}>
+                <h3>{projectData.title}</h3>
+                <p>{projectData.description}</p>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

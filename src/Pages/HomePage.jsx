@@ -42,7 +42,7 @@ const HomePage = () => {
   useEffect(() => {
     fetch(`${process.env.REACT_APP_API_URL}projects`)
       .then((results) => {
-        if (results.status == 404) {
+        if (results.status === 404) {
           history.push("/error");
         }
         return results.json();

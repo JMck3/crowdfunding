@@ -1,4 +1,4 @@
-.project-card {
+/* .project-card {
   width: 100%;
   border: 1px solid black;
   box-shadow: 0px 0px 5px gray;
@@ -8,4 +8,41 @@
   width: 100%;
   height: 300px;
   object-fit: cover;
+} */
+
+.maincontainer {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.thecard {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+}
+
+/* .thecard:hover {
+  transform: rotateY(180deg);
+} */
+
+.thefront {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: #ffc728;
+  color: #333;
+}
+
+.theback {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: #ffc728;
+  color: #333;
+  transform: rotateY(180deg);
 }
