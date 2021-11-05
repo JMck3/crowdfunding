@@ -43,6 +43,7 @@ import { useParams } from "react-router-dom";
 
 const ProjectPage = () => {
   const [projectData, setProjectData] = useState({ pledges: [] });
+  const [users, setUsers] = useState([]);
   const [isEditing, setIsEditing] = useState(false);
   const { id: project_id } = useParams();
 
@@ -54,6 +55,7 @@ const ProjectPage = () => {
       .then((data) => {
         setProjectData(data);
       });
+    getUsers();
   }, [project_id]);
 
   // What can we edit?
@@ -94,9 +96,16 @@ const ProjectPage = () => {
         }),
       }
     );
+    setIsEditing(false);
+  };
+
+  const getUsers = async () => {
+    const userData = await fetch(`${process.env.REACT_APP_API_URL}users`);
+    setUsers(await userData.json());
   };
 
   const ReadProject = () => {
+    console.log(users);
     return (
       <div>
         <h1>{projectData.title}</h1>
@@ -108,7 +117,9 @@ const ProjectPage = () => {
           {projectData.pledges.map((pledgeData, key) => {
             return (
               <li key={key}>
-                {pledgeData.amount} from {pledgeData.supporter}
+                {pledgeData.amount} from{" "}
+                {users &&
+                  users.find((u) => u.id == pledgeData.supporter).username}
               </li>
             );
           })}

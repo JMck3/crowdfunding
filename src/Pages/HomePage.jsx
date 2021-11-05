@@ -30,16 +30,21 @@
 // export default HomePage;
 
 import React, { useState, useEffect } from "react";
+import { useHistory } from "react-router";
 
 // These are our components
 import ProjectCard from "../components/ProjectCard/ProjectCard";
 
 const HomePage = () => {
   const [projectList, setProjectList] = useState([]);
+  const history = useHistory();
 
   useEffect(() => {
     fetch(`${process.env.REACT_APP_API_URL}projects`)
       .then((results) => {
+        if (results.status == 404) {
+          history.push("/error");
+        }
         return results.json();
       })
       .then((data) => {
@@ -81,7 +86,7 @@ const HomePage = () => {
     <div>
       {token ? (
         <div>
-          <h1> You're Logged IN!</h1>
+          <h3> You're Logged IN!</h3>
           <form onSubmit={createProject}>
             <div>
               <label htmlFor="username">Enter Project Name</label>

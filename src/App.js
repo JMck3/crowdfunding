@@ -6,6 +6,7 @@ import Home from "./Pages/HomePage";
 import Projects from "./Pages/ProjectPage";
 import Login from "./Pages/LoginPage";
 import CreateProject from "./Pages/CreateProjectPage";
+import ErrorPage from "./Pages/404";
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
         <Switch>
           <Route path="/project/:id">
             <Projects />
+          </Route>
+          <Route path="/error">
+            <ErrorPage />
           </Route>
           <Route path="/login">
             <Login />
