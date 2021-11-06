@@ -74,6 +74,7 @@
 
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
+import "./LoginForm.css";
 
 const LoginForm = () => {
   const history = useHistory();

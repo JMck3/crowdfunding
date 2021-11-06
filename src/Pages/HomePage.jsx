@@ -86,8 +86,8 @@ const HomePage = () => {
     <div>
       {token ? (
         <div>
-          <h3> You're Logged IN!</h3>
-          <form onSubmit={createProject}>
+          <h2> Welcome! You are Logged in!</h2>
+          {/* <form onSubmit={createProject}>
             <div>
               <label htmlFor="username">Enter Project Name</label>
               <input
@@ -97,7 +97,7 @@ const HomePage = () => {
                 onChange={(e) => setName(e.target.value)}
               />
             </div>
-          </form>
+          </form> */}
         </div>
       ) : null}
       <div id="project-list">
