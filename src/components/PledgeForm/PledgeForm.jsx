@@ -4,11 +4,11 @@ import { useHistory, useParams } from "react-router-dom";
 const PledgeForm = (props) => {
   const history = useHistory();
   // const { refreshProjectData } = props;
-  const { id } = useParams();
+  const { PledgeProject_id } = useParams();
   const [Pledge, setPledge] = useState({
     PledgeAmount: "",
     PledgeComment: "",
-    PledgeAnonymous: "undefined",
+    // PledgeAnonymous: "undefined",
     PledgeProject_id: "id",
   });
 
@@ -44,7 +44,7 @@ const PledgeForm = (props) => {
     e.preventDefault();
     postData().then((response) => {
       // console.log('------response from my API --------')
-      history.push("/thank-you");
+      history.push("/");
     });
   };
   return (

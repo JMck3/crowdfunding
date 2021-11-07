@@ -40,6 +40,7 @@
 // export default ProjectPage;
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import PledgeForm from "../components/PledgeForm/PledgeForm";
 
 const ProjectPage = () => {
   const [projectData, setProjectData] = useState({ pledges: [] });
@@ -110,9 +111,10 @@ const ProjectPage = () => {
       <div>
         <h1>{projectData.title}</h1>
         <h2>{projectData.description}</h2>
-        <h3>Created at: {new Date(projectData.date_created).toDateString()}</h3>
-        <h3>{`Is Open to pledges: ${projectData.is_open}`}</h3>
-        <h3>Pledges:</h3>
+        <h2>Created at: {new Date(projectData.date_created).toDateString()}</h2>
+        <h2>Goal: ${projectData.goal}.00</h2>
+        {/* <h3>{`Is Open to pledges: ${projectData.is_open}`}</h3> */}
+        <h1>Pledges:</h1>
         <ul>
           {projectData.pledges.map((pledgeData, key) => {
             return (
