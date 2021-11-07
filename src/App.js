@@ -7,6 +7,8 @@ import Projects from "./Pages/ProjectPage";
 import Login from "./Pages/LoginPage";
 import CreateProject from "./Pages/CreateProjectPage";
 import ErrorPage from "./Pages/404";
+import SignUpPage from "./Pages/SignUpPage";
+import PledgePage from "./Pages/PledgePage";
 
 function App() {
   return (
@@ -25,8 +27,14 @@ function App() {
           <Route path="/login">
             <Login />
           </Route>
+          <Route path="/signup">
+            <SignUpPage />
+          </Route>
           <Route path="/createproject">
             <CreateProject />
+          </Route>
+          <Route path="/pledge">
+            <PledgePage />
           </Route>
           <Route exact path="/">
             <Home />

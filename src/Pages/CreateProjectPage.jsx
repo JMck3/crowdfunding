@@ -93,7 +93,7 @@ const CreateProjectForm = () => {
         <input
           type="text"
           id="projectIsOpen"
-          placeholder="IsOpen"
+          // placeholder="IsOpen"
           onChange={handleChange}
         />
       </div>
