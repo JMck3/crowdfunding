@@ -19,7 +19,7 @@ function App() {
             <Projects />
           </Route>
           <Route path="/error">
-            <ErrorPage />
+            <FourOhFour />
           </Route>
           <Route path="/login">
             <Login />

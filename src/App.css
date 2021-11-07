@@ -47,8 +47,8 @@ body {
 #project-list {
   display: grid;
   grid-template-columns: 30% 30% 30%;
-  column-gap: 15px;
-  row-gap: 15px;
+  column-gap: 10px;
+  row-gap: 10px;
 }
 
 header {
@@ -61,7 +61,6 @@ header {
 img {
   border-image: fill;
   border-color: blanchedalmond;
-  border-style: groove;
 }
 
 h1 {
