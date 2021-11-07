@@ -1,4 +1,13 @@
-#
+#Github Repository
+
+https://github.com/JMck3/crowdfunding
+
+#Deployed Project (NB. an hour before submission I encountered an error when pushing to heroku main to update my API with all of my changes as a result my deployed project does not show any of the work I finalised in recent days - I will hopefully be able to rectify)
+
+https://mighty-plateau-22554.herokuapp.com/
+
+Copy of issue I encountered just prior to submitting and pushing to heroku this evening. 
+![image](https://user-images.githubusercontent.com/86637156/140646795-8561ee17-0c6f-419d-8ded-a248a58e6153.png)
 
 #Screenshot of Home Page"
 
@@ -28,7 +37,7 @@
 #Error Page for 404 error - not finalised but working
 ![image](https://user-images.githubusercontent.com/86637156/140646143-554a37fd-d519-41c7-93ad-073d0df96d66.png)
 
-
+=======================
 
 # Getting Started with Create React App
 
