@@ -11,6 +11,7 @@ import ErrorPage from "./Pages/404";
 function App() {
   return (
     <Router>
+      <div class="bg_image"></div>
       <div>
         <Nav />
 
@@ -19,7 +20,7 @@ function App() {
             <Projects />
           </Route>
           <Route path="/error">
-            <FourOhFour />
+            <ErrorPage />
           </Route>
           <Route path="/login">
             <Login />

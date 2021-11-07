@@ -1,15 +1,37 @@
+// import React from "react";
+// import { Link } from "react-router-dom";
+
+// function Nav() {
+//   return (
+//     <nav style={{ display: "flex", justifyContent: "space-between" }}>
+//       <Link to="/">Home</Link>
+//       <Link to="/login">Login</Link>
+//       <Link to="/createproject">Create Project</Link>
+//     </nav>
+//   );
+// }
+
+// export default Nav;
+
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Nav() {
+const Nav = () => {
+  const token = window.localStorage.getItem("token");
   return (
     <nav style={{ display: "flex", justifyContent: "space-between" }}>
-      <Link to="/">Home</Link>
-      <Link to="/login">Login</Link>
+      <Link to="/"> Home </Link>
       <Link to="/createproject">Create Project</Link>
+      {token ? (
+        <button onClick={() => window.localStorage.clear()}>Log Out</button>
+      ) : (
+        <div>
+          <Link to="/login">Login</Link>
+        </div>
+      )}
     </nav>
   );
-}
+};
 
 export default Nav;
 

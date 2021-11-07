@@ -35,6 +35,8 @@ import { useHistory } from "react-router";
 // These are our components
 import ProjectCard from "../components/ProjectCard/ProjectCard";
 
+// export default App;
+
 const HomePage = () => {
   const [projectList, setProjectList] = useState([]);
   const history = useHistory();

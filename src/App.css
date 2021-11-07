@@ -1,48 +1,9 @@
-/* .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
-body {
+/* body {
   background-color: rgb(122, 68, 161);
-}
+} */
 
 #project-list {
   display: grid;
@@ -58,11 +19,6 @@ header {
   border-bottom: 1px solid #000;
 }
 
-img {
-  border-image: fill;
-  border-color: blanchedalmond;
-}
-
 h1 {
   font-family: "Raleway", sans-serif;
   text-decoration: none;
@@ -72,7 +28,7 @@ h1 {
 
 h2 {
   font-family: "Raleway", sans-serif;
-  color: whitesmoke;
+  color: #3d405bff;
 }
 
 h3 {
@@ -88,26 +44,29 @@ h3 {
 }
 
 h4 {
-  color: whitesmoke;
+  color: white;
 }
 
 nav {
-  flex-basis: 20%;
+  /* flex-basis: 80%; */
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  padding-bottom: 20px;
+  background-color: #000;
 }
 
 a {
   margin: 2px;
+  padding-right: 5px;
   text-decoration: none;
-  color: whitesmoke;
+  color: white;
 }
 
 a,
 p {
   font-family: monospace;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
 }
 
@@ -115,25 +74,32 @@ p {
   font-family: monospace;
   font-size: 16px;
   font-weight: bold;
-  color: whitesmoke;
+  color: white;
 }
 
 a:hover {
-  color: rgb(229, 149, 55);
+  color: #e07a5fff;
 }
 
 .orange {
-  color: rgb(229, 149, 55);
+  color: #e07a5fff;
   display: inline-block;
 }
 
 .form-box {
   min-width: 100%;
   height: 100vh;
-  border: dotted #f55a00 5vw;
+  border: dotted #e07a5fff 5vw;
   /* border: 1px solid red; */
   margin: 0vw;
   padding: 5vw;
   position: relative;
   /* position:relative for .prevBtn and .nextBtn position:absolute; */
+}
+
+.bg_image {
+  background-image: url("./Images/paws.svg");
+  background-size: cover;
+  height: 45vh;
+  color: white;
 }
