@@ -102,7 +102,7 @@ a:hover {
 .bg_image {
   background-image: url("./Images/paws.svg");
   background-size: cover;
-  height: 45vh;
+  height: 50vh;
   color: white;
 }
 
