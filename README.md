@@ -1,3 +1,5 @@
+My Crowdfunding API was originally SPAYD (raising funds for desexing of rescue animals and medical expenses) however changed to Road to Freedom to focus on transport costs for rescues.  The site is not finalised so I understand I have some work to do before Showcase. 
+
 #Github Repository
 
 https://github.com/JMck3/crowdfunding
