@@ -89,17 +89,6 @@ const HomePage = () => {
       {token ? (
         <div>
           <h2> Welcome! You are Logged in!</h2>
-          {/* <form onSubmit={createProject}>
-            <div>
-              <label htmlFor="username">Enter Project Name</label>
-              <input
-                type="text"
-                id="name"
-                placeholder="name"
-                onChange={(e) => setName(e.target.value)}
-              />
-            </div>
-          </form> */}
         </div>
       ) : null}
       <div id="project-list">
